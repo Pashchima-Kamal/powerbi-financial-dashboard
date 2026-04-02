@@ -4,38 +4,38 @@
 An interactive three-page financial report built in Power BI Desktop, analysing sales, profit, and market performance across countries, products, and segments using the Microsoft Financial Sample dataset.
 
 
-—--
+---
 
 
 ## Tools
 - Power BI Desktop
-- Microsoft Financial Sample dataset
+- [Microsoft Financial Sample dataset](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-financial-download)
 
 
-—--
+---
 
 
 ## Project structure
 ```
 powerbi-financial-dashboard/
 │
-├── data/
+├── Data/
 │   └── Financial Sample.xlsx      
 │
-├── reports/
+├── Reports/
 │   └── Financial_Dashboard_Final.pbix   
 │
-├── screenshots/
-│   ├── overview.png                
-│   ├── products.png               
-│   ├── regional.png                
-│   └── model.png                   
+├── Screenshots/
+│   ├── Financial_DB_Overview_Final.png                
+│   ├── Financial_DB_Product_Final.png               
+│   ├── Financial_DB_Region_Final.png                
+│   └── Financial_DB_Model_Final.png                   
 │
 └── README.md                     
 ```
 
 
-—--
+---
 
 
 ## Report pages
@@ -45,24 +45,24 @@ powerbi-financial-dashboard/
 Key KPIs (Total Sales, Total Profit, Profit Margin %), profit by country bar chart, and sales over time line chart with date hierarchy drill-down. Year and Market Type slicer synced across all pages.
 
 
-![Overview](screenshots/overview.png)
+![Overview](Screenshots/Financial_DB_Overview_Final.png )
 
 
 ### Product and segment analysis
 Matrix visual with conditional formatting (red to green) showing sales and profit across every product and segment combination. Donut chart showing sales split by segment.
 
 
-![Products](screenshots/products.png)
+![Products](Screenshots/Financial_DB_Product_Final.png)
 
 
 ### Regional analysis
 Sales broken down by region and market type using a related Countries dimension table. Country-level summary table combining columns from both the fact and dimension tables.
 
 
-![Regional](screenshots/regional.png)
+![Regional](Screenshots/Financial_DB_Region_Final.png)
 
 
-—--
+---
 
 
 ## Data model
@@ -71,10 +71,10 @@ Sales broken down by region and market type using a related Countries dimension 
 Financials as the central fact table connected to a Countries dimension table via a one-to-many relationship on the Country key. Single-direction cross-filter from Countries into Financials.
 
 
-![Model](screenshots/model.png)
+![Model](Screenshots/Financial_DB_Model_Final.png)
 
 
-—--
+---
 
 
 ## Technical skills demonstrated
